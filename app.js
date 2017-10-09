@@ -53,7 +53,7 @@ app.get('/assemblaCode', function(req, res) {
               assert.equal(err, null);
               console.log("Inserted a document into the restaurants collection.");
 
-              sendFileContent(res, __dirname + '/views/index.html', 'text/html');
+              res.redirect('/');
             });
           });
         });
